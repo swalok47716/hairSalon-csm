@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>index</title>
+</head>
+
+<body>
+  <main>
+    <form id="addSalon" class="d-flex flex-column align-items-start gap-3">
+      <div class="row w-75">
+        <label for="salonName" class="col-3 col-lg-2 col-form-label">沙龍名稱：</label>
+        <div class="col-9 col-lg-6">
+          <input type="text" class="form-control" id="salonName" required>
+        </div>
+      </div>
+      <div class="row w-75">
+        <label for="city" class="col-3 col-lg-2 col-form-label">縣市:</label>
+        <div class="col-4 col-lg-3">
+          <select id="city" class="form-select" required>
+            <option selected>-請選擇-</option>
+            <option value="taipeiCity">台北市</option>
+            <option value="newTaipeiCity">新北市</option>
+          </select>
+        </div>
+      </div>
+      <div class="row w-75">
+        <label for="district" class="col-3 col-lg-2 col-form-label">區:</label>
+        <div class="col-4 col-lg-3">
+          <select id="district" class="form-select" required>
+            <option selected>-請選擇-</option>
+          </select>
+        </div>
+      </div>
+      <div class="row w-75">
+        <label for="address" class="col-3 col-lg-2 col-form-label">街道位址：</label>
+        <div class="col-9 col-lg-6">
+          <input type="text" class="form-control" id="address" required>
+        </div>
+      </div>
+      <div class="row w-75">
+        <label class="col-3 col-lg-2 col-form-label">營業時間：</label>
+        <div class="col-8 col-lg-6">
+          <div class="d-flex">
+            <input type="time" class="form-control" id="timeFrom">
+            <input type="time" class="form-control" id="timeTo">
+          </div>
+        </div>
+      </div>
+      <div class="row w-75">
+        <label for="tel" class="col-3 col-lg-2 col-form-label">連絡電話：</label>
+        <div class="col-9 col-lg-6">
+          <input type="tel" class="form-control" id="tel">
+        </div>
+      </div>
+      <button type="submit" class="btn btn-secondary">送出</button>
+    </form>
+  </main>
+  <script type="module" src="../main.js"></script>
+  <script type="module" src="../assets/js/index.js"></script>
+</body>
+
+</html>
